@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import Users from "./components/users/index";
 import ContextButtonComponent from "./components/context-concept/button";
 import ContextTextComponent from "./components/context-concept/text";
+import UseReducerExample from "./components/use-Reducer/use-reducer";
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
 function App() {
   const [count, setCount] = useState(0);
@@ -17,8 +18,9 @@ function App() {
     <div>
       <h1>React JS Concepts 2024</h1>
       <Nav />
-      <ContextButtonComponent />
-      <ContextTextComponent />
+      <UseReducerExample />
+      {/* <ContextButtonComponent />
+      <ContextTextComponent /> */}
       {/* <Routes>
         <Route path={"/users"} element={<Users />} />
       </Routes> */}

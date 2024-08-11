@@ -1,5 +1,13 @@
+import { GlobalContext } from "../context";
+import { useContext } from "react";
+
 function ContextButtonComponent() {
-  return <button>Change theme</button>;
+  const { setTheme, theme } = useContext(GlobalContext); //destructuring
+  return (
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+      Change theme
+    </button>
+  );
 }
 
 export default ContextButtonComponent;
